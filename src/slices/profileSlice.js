@@ -1,42 +1,22 @@
-import { createSlice } from "@reduxjs/toolkit"
+import {createSlice} from "@reduxjs/toolkit"
 
 const initialState = {
-  step: 1,
-  course: null,
-  editCourse: false,
-  paymentLoading: false,
-}
+    user: localStorage.getItem("user") ? JSON.parse(localStorage.getItem("user")) : null,
+    loading: false,
+};
 
-const courseSlice = createSlice({
-  name: "course",
-  initialState,
-  reducers: {
-    setUser: (state, action) => {
-      state.step = action.payload
+const profileSlice = createSlice({
+    name:"profile",
+    initialState: initialState,
+    reducers: {
+        setUser(state, value) {
+            state.user = value.payload;
+        },
+        setLoading(state, value) {
+            state.loading = value.payload;
+          },
     },
-    setCourse: (state, action) => {
-      state.course = action.payload
-    },
-    setEditCourse: (state, action) => {
-      state.editCourse = action.payload
-    },
-    setPaymentLoading: (state, action) => {
-      state.paymentLoading = action.payload
-    },
-    resetCourseState: (state) => {
-      state.step = 1
-      state.course = null
-      state.editCourse = false
-    },
-  },
-})
+});
 
-export const {
-  setUser,
-  setCourse,
-  setEditCourse,
-  setPaymentLoading,
-  resetCourseState,
-} = courseSlice.actions
-
-export default courseSlice.reducer
+export const {setUser, setLoading} = profileSlice.actions;
+export default profileSlice.reducer;
