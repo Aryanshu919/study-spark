@@ -16,6 +16,7 @@ import PrivateRoute from './components/core/Auth/PrivateRoute';
 import Dashboard from './pages/Dashboard';
 import MyProfile from './components/core/Dashboard/MyProfile';
 import MyCourses from './components/core/Dashboard/MyCourses';
+import AddCourse from "./components/core/Dashboard/AddCourse/Index";
 import Settings from './components/core/Dashboard/Setttings/';
 import EnrolledCourses from './components/core/Dashboard/EnrolledCourses';
 import Cart from './components/core/Dashboard/Cart/';
@@ -76,7 +77,7 @@ function App() {
         user?.accountType === ACCOUNT_TYPE.INSTRUCTOR && (
           <>
           {/* <Route path="dashboard/instructor" element={<Instructor />} /> */}
-          {/* <Route path="dashboard/add-course" element={<AddCourse />} /> */}
+          <Route path="dashboard/add-course" element={<AddCourse />} /> 
           <Route path="dashboard/my-courses" element={<MyCourses />} />
           {/* <Route path="dashboard/edit-course/:courseId" element={<EditCourse />} /> */}
           
