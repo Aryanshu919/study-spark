@@ -22,6 +22,11 @@ import EnrolledCourses from './components/core/Dashboard/EnrolledCourses';
 import Cart from './components/core/Dashboard/Cart/';
 import {ACCOUNT_TYPE} from './utils/constants';
 import {useDispatch, useSelector} from "react-redux";
+import EditCourse from "./components/core/Dashboard/EditCourse";
+import Catalog from './pages/Catalog';
+
+import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
+
 function App() {
 
   const dispatch = useDispatch();
@@ -35,6 +40,13 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home />}></Route>
+      <Route path="catalog/:catalogName" element={<Catalog/>} />
+      {/* <Route path="courses/:courseId" element={<CourseDetails/>} /> */}
+
+
+
+
+
         <Route path='/login' element={<Login />}></Route>
         <Route path='/signup' element={<Signup />}></Route>
         <Route path='/forgot-password' element={<ForgotPassword />}></Route>
@@ -79,7 +91,7 @@ function App() {
           {/* <Route path="dashboard/instructor" element={<Instructor />} /> */}
           <Route path="dashboard/add-course" element={<AddCourse />} /> 
           <Route path="dashboard/my-courses" element={<MyCourses />} />
-          {/* <Route path="dashboard/edit-course/:courseId" element={<EditCourse />} /> */}
+          <Route path="dashboard/edit-course/:courseId" element={<EditCourse />} />
           
           </>
         )

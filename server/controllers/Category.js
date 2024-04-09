@@ -114,6 +114,7 @@ exports.categoryPageDetails = async (req, res) => {
         },
       })
     } catch (error) {
+      console.log("error yahai pe hai");
       return res.status(500).json({
         success: false,
         message: "Internal server error",
