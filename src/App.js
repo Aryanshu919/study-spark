@@ -24,6 +24,7 @@ import {ACCOUNT_TYPE} from './utils/constants';
 import {useDispatch, useSelector} from "react-redux";
 import EditCourse from "./components/core/Dashboard/EditCourse";
 import Catalog from './pages/Catalog';
+import CourseDetails from "./pages/CourseDetails";
 
 import Instructor from "./components/core/Dashboard/InstructorDashboard/Instructor";
 
@@ -41,7 +42,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
       <Route path="catalog/:catalogName" element={<Catalog/>} />
-      {/* <Route path="courses/:courseId" element={<CourseDetails/>} /> */}
+      <Route path="courses/:courseId" element={<CourseDetails/>} />
 
 
 
