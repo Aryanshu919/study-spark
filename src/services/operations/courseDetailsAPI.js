@@ -369,6 +369,7 @@ export const createRating = async (data, token) => {
   const toastId = toast.loading("Loading...")
   let success = false
   try {
+   
     const response = await apiConnector("POST", CREATE_RATING_API, data, {
       Authorization: `Bearer ${token}`,
     })
