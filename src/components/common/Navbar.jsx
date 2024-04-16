@@ -49,7 +49,7 @@ function Navbar() {
       <div className="flex w-11/12 max-w-maxContent items-center justify-between">
         {/* Logo */}
         <Link to="/">
-          <img src={logo} alt="Logo" width={160} height={32} loading="lazy" />
+          <img className="mt-1 w-42 h-42" src={logo} alt="Logo" width={160} height={32} loading="lazy" />
         </Link>
         {/* Navigation links */}
         <nav className="hidden md:block">
@@ -61,7 +61,7 @@ function Navbar() {
                     <div
                       className={`group relative flex cursor-pointer items-center gap-1 ${
                         matchRoute("/catalog/:catalogName")
-                          ? "text-yellow-25"
+                          ? "text-blue-25"
                           : "text-richblack-25"
                       }`}
                     >
@@ -101,7 +101,7 @@ function Navbar() {
                     <p
                       className={`${
                         matchRoute(link?.path)
-                          ? "text-yellow-25"
+                          ? "text-blue-25"
                           : "text-richblack-25"
                       }`}
                     >
