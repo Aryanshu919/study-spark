@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://study-spark-murex.vercel.app",
+		origin:"https://study-spark-phi.vercel.app/",
 		credentials:true,
 		
 	})
@@ -53,6 +53,7 @@ app.get("/", (req, res) => {
 		message:'Your server is up and running....'
 	});
 });
+
 
 app.listen(PORT, () => {
 	console.log(`App is running at ${PORT}`)
