@@ -23,7 +23,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
 	cors({
-		origin:"https://study-spark-phi.vercel.app/",
+		origin:"https://study-spark-phi.vercel.app",
 		credentials:true,
 		
 	})
