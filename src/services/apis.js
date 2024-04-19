@@ -1,4 +1,4 @@
-const BASE_URL = "https://study-spark-agv5.vercel.app"
+const BASE_URL = `https://study-spark-api.vercel.app/api/v1`
 
 // AUTH ENDPOINTS
 export const endpoints = {
