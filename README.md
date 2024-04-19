@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# StudySparks Ed-Tech Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Study-sparks is a versatile and intuitive ed-tech platform that enables users to create, consume, and rate educational content. It provides a seamless and interactive learning experience for students while offering a platform for instructors to showcase their expertise and connect with learners worldwide. The platform is built using the MERN stack, which includes ReactJS, NodeJS, MongoDB, and ExpressJS.
 
-## Available Scripts
 
-In the project directory, you can run:
+## System Architecture
 
-### `npm start`
+The StudySparks ed-tech platform follows a client-server architecture with the following main components:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Front-end**: Built with ReactJS, it communicates with the back end using RESTful API calls.
+- **Back-end**: Developed with NodeJS and ExpressJS, it handles user authentication, course management, and more.
+- **Database**: Utilizes MongoDB as a NoSQL database to store course content, user data, and other relevant information.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![System Architecture Diagram](https://github.com/yashsarode45/StudyNotion-Mega-Project/assets/65209607/3a154827-641d-4269-b662-203afcfd7654)
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Front-end
 
-### `npm run build`
+The front end of StudySparks is built with ReactJS, offering a dynamic and responsive user interface for students and instructors. Here are some key pages and functionalities:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**For Students:**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Homepage**: Introduction to the platform.
+- **Course List**: List of available courses with descriptions and ratings.
+- **Wishlist**: Display added courses.
+- **Cart Checkout**: Complete course purchase using Razorpay.
+- **Course Content**: Access course material, including videos.
+- **Enrolled Courses**: Progress and list of enrolled courses.
+- **User Details**: Account information.
+- **User Edit Details**: Edit account information.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**For Instructors:**
 
-### `npm run eject`
+- **Dashboard**: Overview of instructor's courses and ratings.
+- **Insights**: Detailed course including the number of views, clicks, and other relevant metrics.
+- **Course Management Pages**: Create, update, delete courses.
+- **View and Edit Profile Details**: Account management.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Front-end tools and technologies include ReactJS, CSS, Tailwind CSS, Redux for state management, and VSCode for development.
+Additionally, we use some npm packages to add extra functionality to the front end.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Back-end
 
-## Learn More
+The back end of StudySparks is built with NodeJS and ExpressJS and uses MongoDB as its primary database. Key features and functionalities include:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **User Authentication and Authorization**: Secure login, OTP verification, and forgot password functionality.
+- **Course Management**: Instructors can create, update, delete courses, and students can view and rate them.
+- **Payment Integration**: Razorpay integration for course purchases.
+- **Cloud-based Media Management**: Cloudinary for storing and managing media content.
+- **Markdown Formatting**: Course content is stored in Markdown format for rendering.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**Frameworks, libraries, and tools used**: Node.js, MongoDB, Express.js, JWT for authentication and authorization, Bcrypt for password hashing, and Mongoose for database interaction.
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
