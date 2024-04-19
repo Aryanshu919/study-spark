@@ -40,10 +40,10 @@ cloudinaryConnect();
 
 //routes
 app.use("/auth", userRoutes);
-app.use("/api/v1/profile", profileRoutes);
-app.use("/api/v1/course", courseRoutes);
-app.use("/api/v1/payment", paymentRoutes);
-app.use("/api/v1/reach", contactUsRoute);
+app.use("/profile", profileRoutes);
+app.use("/course", courseRoutes);
+app.use("/payment", paymentRoutes);
+app.use("/reach", contactUsRoute);
 
 //def route
 
